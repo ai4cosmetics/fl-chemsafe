@@ -1,0 +1,30 @@
+{
+  "dataset_info": {
+    "source_file": "xu2012_data.csv",
+    "total_molecules": 7395,
+    "train_samples": 5916,
+    "test_samples": 1479,
+    "train_positive_ratio": 0.550709939148073,
+    "test_positive_ratio": 0.5510480054090602
+  },
+  "feature_info": {
+    "smiles_sequence_length": 100,
+    "vocab_size": 36,
+    "maccs_features_original": 167,
+    "maccs_features_cleaned": 134,
+    "feature_reduction_ratio": 0.8023952095808383
+  },
+  "processing_info": {
+    "standardization": "molvs.standardize_smiles",
+    "validation": "rdkit.Chem.MolFromSmiles",
+    "maccs_cleaning": {
+      "variance_threshold": 0.01,
+      "correlation_threshold": 0.95
+    }
+  },
+  "data_split": {
+    "test_size": 0.2,
+    "stratified": true,
+    "random_state": 42
+  }
+}

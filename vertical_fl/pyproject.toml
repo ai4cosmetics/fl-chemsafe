@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "smiles-fl"
+version = "1.0.0"
+description = "Federated Learning for SMILES CNNs with non-IID data"
+dependencies = [
+    "flwr[simulation]>=1.18.0",
+    "torch>=2.2.2",
+    "numpy>=1.26.4",
+    "pandas>=2.2.3",
+    "rdkit>=2025.3.2",
+    "scikit-learn>=1.6.1",
+    "plotly>=5.18.0",
+    "kaleido>=0.2.1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.flwr.app]
+publisher = "chemfl"
+
+[tool.flwr.app.components]
+serverapp = "server_app:app"
+clientapp = "client_app:app"
+
+[tool.flwr.app.config]
+num-server-rounds = 10
+epochs = 5
+
+[tool.flwr.federations]
+default = "local-simulation"
+
+[tool.flwr.federations.local-simulation]
+options.num-supernodes = 2

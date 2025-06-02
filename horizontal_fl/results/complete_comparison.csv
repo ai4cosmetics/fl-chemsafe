@@ -1,0 +1,5 @@
+Model,AUC,Accuracy,Precision,Recall,F1,MCC,Train_Samples,Test_Samples,Best_Params
+AI4Cosmetics Local,0.7203751065643649,0.6486486486486487,0.7192982456140351,0.803921568627451,0.7592592592592593,0.11912223313889678,292,74,"{""subsample"": 0.8, ""scale_pos_weight"": 0.4527363184079602, ""n_estimators"": 200, ""max_depth"": 6, ""learning_rate"": 0.05, ""colsample_bytree"": 0.8}"
+SkinDoctorCP Local,0.8585839598997494,0.7587548638132295,0.6972477064220184,0.7238095238095238,0.7102803738317757,0.5039957717137995,1026,257,"{""subsample"": 0.8, ""scale_pos_weight"": 1.4428571428571428, ""n_estimators"": 200, ""max_depth"": 6, ""learning_rate"": 0.05, ""colsample_bytree"": 0.9}"
+Centralised Learning,0.8802380952380952,0.797583081570997,0.7908496732026143,0.7756410256410257,0.7831715210355987,0.5935017365957157,1318,331,"{""subsample"": 0.8, ""scale_pos_weight"": 1.1223832528180355, ""n_estimators"": 200, ""max_depth"": 6, ""learning_rate"": 0.05, ""colsample_bytree"": 0.8}"
+Federated Learning,0.8580402930402931,0.7613293051359517,0.7391304347826086,0.7628205128205128,0.750788643533123,0.5221515163688584,1318,331,"{""strategy"": ""FedXgbBagging""}"

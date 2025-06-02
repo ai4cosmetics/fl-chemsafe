@@ -1,0 +1,371 @@
+CASRN,Name,Canonical SMILES,LLNA
+6236-09-5,(+)-Citramalic acid,O=C(O)CC(O)(C(=O)O)C,0
+5989-27-5,(+)-Limonene,C=C(C)C1CC=C(C)CC1,1
+87-69-4,(+)-Tartaric acid,O=C(O)C(O)C(O)C(=O)O,0
+59-02-9,(+)-α-Tocopherol,OC=1C(=C(C=2OC(C)(CCC2C1C)CCCC(C)CCCC(C)CCCC(C)C)C)C,1
+1653-30-1,(±)-2-Undecanol,OC(C)CCCCCCCCC,0
+106-72-9,"(±)-2,6-Dimethyl-5-heptenal",O=CC(C)CCC=C(C)C,1
+78-70-6,(±)-Linalool,OC(C=C)(C)CCC=C(C)C,1
+57-55-6,(±)-Propylene glycol,OCC(O)C,0
+24720-09-0,(±)-α-Damascone,O=C(C=CC)C1C(=CCCC1(C)C)C,1
+357650-26-1,"(2E,5Z)-5,6,7-Trimethyl-2,5-octadien-4-one",O=C(C=CC)C(=C(C)C(C)C)C,1
+1885-38-7,(2E)-3-Phenyl-2-propenenitrile,N#CC=CC=1C=CC=CC1,0
+811412-48-3,(3E)-4-Methyl-3-decen-5-one,O=C(C(=CCC)C)CCCCC,1
+97358-55-9,(3Z)-1-(1-Methoxypropoxy)-3-hexene,O(C)C(OCCC=CCC)CC,0
+35087-49-1,"1-(2,2-Dimethyl-6-methylenecyclohexyl)-2-buten-1-one",O=C(C=CC)C1C(=C)CCCC1(C)C,1
+13144-88-2,"1-(2,4,4,5,5-Pentamethyl-1-cyclopenten-1-yl)ethanone",O=C(C1=C(C)CC(C)(C)C1(C)C)C,1
+23696-85-7,"1-(2,6,6-Trimethyl-1,3-cyclohexadien-1-yl)-2-buten-1-one",O=C(C=CC)C1=C(C=CCC1(C)C)C,1
+23911-56-0,1-(3-Methyl-2-benzofuranyl)ethanone,O=C(C=1OC=2C=CC=CC2C1C)C,0
+104-27-8,1-(4-Methoxyphenyl)-1-penten-3-one,O=C(C=CC1=CC=C(OC)C=C1)CC,1
+1086-00-6,1-(Chloromethyl)pyrene,ClCC1=CC=C2C=CC3=CC=CC=4C=CC1=C2C34,1
+478695-70-4,"1-[1-(3,3-Dimethylcyclohexyl)ethyl] 3-ethyl propanedioate",O=C(OCC)CC(=O)OC(C)C1CCCC(C)(C)C1,0
+584-48-5,"1-Bromo-2,4-dinitrobenzene",O=N(=O)C1=CC=C(Br)C(=C1)N(=O)=O,1
+143-15-7,1-Bromododecane,BrCCCCCCCCCCCC,1
+112-82-3,1-Bromohexadecane,BrCCCCCCCCCCCCCCCC,1
+111-25-1,1-Bromohexane,BrCCCCCC,1
+71-36-3,1-Butanol,OCCCC,0
+83-42-1,1-Chloro-2-methyl-3-nitrobenzene,O=N(=O)C=1C=CC=C(Cl)C1C,0
+97-00-7,"1-Chloro-2,4-dinitrobenzene",O=N(=O)C1=CC=C(Cl)C(=C1)N(=O)=O,1
+3386-33-2,1-Chlorooctadecane,ClCCCCCCCCCCCCCCCCCC,1
+68039-69-0,1-Cyclohexylethyl 2-butenoate,O=C(OC(C)C1CCCCC1)C=CC,1
+67643-70-3,"1-Ethenyl-1,5-dimethyl-4-hexen-1-yl N,N-dimethylcarbamate",O=C(OC(C=C)(C)CCC=C(C)C)N(C)C,0
+544-77-4,1-Iodohexadecane,ICCCCCCCCCCCCCCCC,1
+638-45-9,1-Iodohexane,ICCCCCC,0
+119-10-8,1-Methoxy-4-methyl-2-nitrobenzene,O=N(=O)C1=CC(=CC=C1OC)C,0
+90-15-3,1-Naphthol,OC1=CC=CC=2C=CC=CC12,1
+2442-10-6,1-Octen-3-yl acetate,O=C(OC(C=C)CCCCC)C,0
+579-07-7,"1-Phenyl-1,2-propanedione",O=C(C=1C=CC=CC1)C(=O)C,1
+224031-70-3,1-spiro[4.5]Dec-7-en-7-yl-4-penten-1-one,O=C(C1=CCCC2(C1)CCCC2)CCC=C,1
+1337-81-1,1-Vinyl pyridine,C=CC1=CC=CC=N1,1
+2634-33-5,"1,2-Benzisothiazol-3(2H)-one",O=C1NSC=2C=CC=CC21,1
+35691-65-7,"1,2-Dibromo-2,4-dicyanobutane",N#CCCC(Br)(C#N)CBr,1
+533-73-3,"1,2,4-Benzenetriol",OC1=CC=C(O)C(O)=C1,1
+120-57-0,"1,3-Benzodioxole-5-carboxaldehyde",O=CC1=CC=C2OCOC2=C1,1
+83-56-7,"1,5-Dihydroxynaphthalene",OC1=CC=CC=2C(O)=CC=CC12,1
+16096-31-4,"1,6-Hexanediol diglycidyl ether",O(CCCCCCOCC1OC1)CC2OC2,1
+112-45-8,10-Undecenal,O=CCCCCCCCCC=C,1
+3344-77-2,12-Bromo-1-dodecanol,BrCCCCCCCCCCCCO,1
+1126-76-7,2-(2-Phenylethyl)oxirane,O1CC1CCC=2C=CC=CC2,1
+66095-81-6,2-[(2-Methoxy-4-nitrophenyl)amino]ethanol,O=N(=O)C1=CC=C(NCCO)C(OC)=C1,0
+5296-21-9,2-[(Phenylthio)methyl]oxirane,O1CC1CSC=2C=CC=CC2,1
+874-23-7,2-Acetylcyclohexanone,O=C(C)C1C(=O)CCCC1,0
+16867-03-1,2-Amino-3-hydroxypyridine,OC1=CC=CN=C1N,0
+2835-98-5,2-Amino-5-methylphenol,OC1=CC(=CC=C1N)C,1
+6358-09-4,2-Amino-6-chloro-4-nitrophenol,O=N(=O)C1=CC(Cl)=C(O)C(N)=C1,1
+95-55-6,2-Aminophenol,OC=1C=CC=CC1N,1
+934-34-9,2-Benzothiazolinone,O=C1SC=2C=CC=CC2N1,0
+10520-81-7,2-Bromotetradecanoic acid,O=C(O)C(Br)CCCCCCCCCCCC,1
+3913-71-1,2-Decenal,O=CC=CCCCCCCC,1
+97-96-1,2-Ethylbutanal,O=CC(CC)CC,1
+103-11-7,2-Ethylhexyl acrylate,O=C(OCC(CC)CCCC)C=C,1
+369-36-8,2-Fluoro-5-nitrobenzenamine,O=N(=O)C1=CC=C(F)C(N)=C1,0
+17373-89-6,2-Hexylidenecyclopentanone,O=C1C(=CCCCCC)CCC1,1
+131-57-7,2-Hydroxy-4-methoxybenzophenone,O=C(C=1C=CC=CC1)C2=CC=C(OC)C=C2O,0
+818-61-1,2-Hydroxyethyl acrylate,O=C(OCCO)C=C,1
+923-26-2,2-Hydroxypropyl methacrylate,O=C(OCC(O)C)C(=C)C,0
+149-30-4,2-Mercaptobenzothiazole,S=C1SC=2C=CC=CC2N1,1
+2382-96-9,2-Mercaptobenzoxazole,S=C1OC=2C=CC=CC2N1,0
+93-51-6,2-Methoxy-4-methylphenol,OC1=CC=C(C=C1OC)C,1
+525-76-8,"2-Methyl-4H-3,1-benzoxazin-4-one",O=C1OC(=NC=2C=CC=CC12)C,1
+69300-15-8,2-Methyldecanenitrile,N#CC(C)CCCCCCCC,0
+608-25-3,2-Methylresorcinol,OC1=CC=CC(O)=C1C,1
+110-41-8,2-Methylundecanal,O=CC(C)CCCCCCCCC,1
+80062-31-3,2-Nitro-5-glyceryl methylaniline,O=N(=O)C1=CC=C(OCC(O)CO)C=C1NC,0
+60-12-8,2-Phenylethanol,OCCC=1C=CC=CC1,0
+93-53-8,2-Phenylpropanal,O=CC(C=1C=CC=CC1)C,1
+80-62-6,"2-Propenoic acid, 2-methyl-, methyl ester",O=C(OC)C(=C)C,1
+149021-58-9,2-Propylheptyl acrylate,O=C(OCC(CCC)CCCCC)C=C,1
+868839-23-0,2-Propylheptyl octanoate,O=C(OCC(CCC)CCCCC)CCCCCCC,0
+1118-71-4,"2,2,6,6-Tetramethyl-3,5-heptanedione",O=C(CC(=O)C(C)(C)C)C(C)(C)C,1
+84041-77-0,"2,2′-[(2-Nitro-1,4-phenylene)diimino]bis[ethanol]",O=N(=O)C1=CC(=CC=C1NCCO)NCCO,0
+2050-14-8,"2,2′-Dihydroxyazobenzene",OC=1C=CC=CC1N=NC=2C=CC=CC2O,1
+611-06-3,"2,4-Dichloronitrobenzene",O=N(=O)C1=CC=C(Cl)C=C1Cl,1
+709-49-9,"2,4-Dinitroiodobenzene",O=N(=O)C1=CC=C(I)C(=C1)N(=O)=O,1
+1594-56-5,"2,4-Dinitrophenyl thiocyanate",N#CSC1=CC=C(C=C1N(=O)=O)N(=O)=O,1
+5910-85-0,"2,4-Heptadienal",O=CC=CC=CCC,1
+149330-25-6,"2,6-DIHYDROXYETHYLAMINOTOLUENE",OCCNC1=CC=CC(NCCO)=C1C,0
+91-10-1,"2,6-Dimethoxyphenol",OC=1C(OC)=CC=CC1OC,0
+18479-58-8,"2,6-Dimethyl-7-octen-2-ol",OC(C)(C)CCCC(C=C)C,0
+632-46-2,"2,6-Dimethylbenzoic acid",O=C(O)C=1C(=CC=CC1C)C,0
+582-17-2,"2,7-Naphthalenediol",OC=1C=CC2=CC=C(O)C=C2C1,1
+84540-50-1,3-Amino-2-chloro-6-methylphenol,ClC=1C(N)=CC=C(C1O)C,0
+591-27-5,3-Aminophenol,OC1=CC=CC(N)=C1,1
+4903-09-7,3-Chloro-4-methoxybenzaldehyde,O=CC1=CC=C(OC)C(Cl)=C1,0
+15128-82-2,3-Hydroxy-2-nitropyridine,O=N(=O)C1=NC=CC=C1O,0
+619-14-7,3-Hydroxy-4-nitrobenzoic acid,O=C(O)C1=CC=C(C(O)=C1)N(=O)=O,0
+55406-53-6,3-Iodo-2-propynyl butylcarbamate,O=C(OCC#CI)NCCCC,1
+488-17-5,3-Methylcatechol,OC1=CC=CC(=C1O)C,1
+3055-86-5,3-Phenoxypropanenitrile,N#CCCOC=1C=CC=CC1,0
+122-72-5,3-Phenylpropyl acetate,O=C(OCCCC=1C=CC=CC1)C,0
+1154-59-2,"3,3′,4′,5-Tetrachlorosalicylanilide",O=C(NC1=CC=C(Cl)C(Cl)=C1)C=2C=C(Cl)C=C(Cl)C2O,1
+577-71-9,"3,4-Dinitrophenol",O=N(=O)C1=CC=C(O)C=C1N(=O)=O,1
+36727-29-4,"3,5,5-Trimethylhexanoyl chloride",O=C(Cl)CC(C)CC(C)(C)C,1
+39034-24-7,"3,6,9,12-Tetraoxahexacosan-1-ol",OCCOCCOCCOCCOCCCCCCCCCCCCCC,1
+3055-96-7,"3,6,9,12,15,18-Hexaoxatriacontan-1-ol",OCCOCCOCCOCCOCCOCCOCCCCCCCCCCCC,1
+22418-66-2,"3,7-Dimethyl-2-methylene-6-octenal",O=CC(=C)C(C)CCC=C(C)C,1
+85-27-8,"4-(1-Phenylethyl)-1,3-benzenediol",OC1=CC=C(C(O)=C1)C(C=2C=CC=CC2)C,0
+65235-31-6,4-[(2-Hydroxyethyl)amino]-3-nitrophenol,O=N(=O)C1=CC(O)=CC=C1NCCO,1
+92952-81-3,4-[(3-Hydroxypropyl)amino]-3-nitrophenol,O=N(=O)C1=CC(O)=CC=C1NCCCO,0
+2835-99-6,4-Amino-3-methylphenol,OC1=CC=C(N)C(=C1)C,1
+610-81-1,4-Amino-3-nitrophenol,O=N(=O)C1=CC(O)=CC=C1N,1
+150-13-0,4-Aminobenzoic acid,O=C(O)C1=CC=C(N)C=C1,0
+123-30-8,4-Aminophenol,OC1=CC=C(N)C=C1,1
+106-47-8,4-Chloroaniline,ClC1=CC=C(N)C=C1,1
+1049017-68-6,4-Ethenyl-1-cyclohexene-1-carboxaldehyde,O=CC1=CCC(C=C)CC1,1
+123-08-0,4-Hydroxybenzaldehyde,O=CC1=CC=C(O)C=C1,0
+99-96-7,4-Hydroxybenzoic acid,O=C(O)C1=CC=C(O)C=C1,0
+123-11-5,4-Methoxybenzaldehyde,O=CC1=CC=C(OC)C=C1,0
+105-13-5,4-Methoxybenzyl alcohol,OCC1=CC=C(OC)C=C1,1
+104-87-0,4-Methylbenzaldehyde,O=CC1=CC=C(C=C1)C,1
+5406-12-2,4-Methylbenzenepropanal,O=CCCC1=CC=C(C=C1)C,1
+452-86-8,4-Methylcatechol,OC1=CC=C(C=C1O)C,1
+99-56-9,"4-Nitro-1,2-phenylenediamine",O=N(=O)C1=CC=C(N)C(N)=C1,1
+59820-63-2,4-Nitro-3-methylaminophenoxyethanol,O=N(=O)C1=CC=C(OCCO)C=C1NC,0
+555-16-8,4-Nitrobenzaldehyde,O=CC1=CC=C(C=C1)N(=O)=O,0
+100-11-8,4-Nitrobenzyl bromide,O=N(=O)C1=CC=C(C=C1)CBr,1
+100-14-1,4-Nitrobenzyl chloride,O=N(=O)C1=CC=C(C=C1)CCl,1
+122-57-6,4-Phenyl-3-buten-2-one,O=C(C=CC=1C=CC=CC1)C,1
+2785-87-7,4-Propylguaiacol,OC1=CC=C(C=C1OC)CCC,1
+100-43-6,4-Vinylpyridine,N=1C=CC(C=C)=CC1,1
+100-06-1,4′-Methoxyacetophenone,O=C(C1=CC=C(OC)C=C1)C,0
+55302-96-0,5-[(2-Hydroxyethyl)amino]-2-methylphenol,OC1=CC(=CC=C1C)NCCO,0
+2835-95-2,5-Amino-2-methylphenol,OC1=CC(N)=CC=C1C,1
+26172-55-4,5-Chloro-2-methyl-4-isothiazolin-3-one OR Kathon CG ( 5-chloro-2-methyl-4-isothiazolin-3-one and 2-methyl-4-isothiazolin-3-one) OR MCI/MI,O=C1C=C(Cl)SN1C,1
+81925-81-7,5-Methyl-2-hepten-4-one,O=C(C=CC)C(C)CC,1
+21834-92-4,5-Methyl-2-phenyl-2-hexenal,O=CC(=CCC(C)C)C=1C=CC=CC1,1
+13706-86-0,"5-methyl-2,3-hexanedione",O=C(C(=O)CC(C)C)C,1
+3131-52-0,"5,6-Dihydroxyindole",OC1=CC=2C=CNC2C=C1O,1
+3453-33-6,6-Methoxy-2-naphthaldehyde,O=CC1=CC=C2C=C(OC)C=CC2=C1,0
+62439-41-2,"6-Methoxy-2,6-dimethylheptanal",O=CC(C)CCCC(OC)(C)C,1
+92-48-8,6-Methylcoumarin,O=C1OC=2C=CC(=CC2C=C1)C,0
+1604-28-0,"6-Methylhepta-3,5-dien-2-one",O=C(C=CC=C(C)C)C,0
+57-97-6,"7,12-Dimethylbenz[a]anthracene",C=1C=CC2=C(C1)C=CC=3C2=C(C=4C=CC=CC4C3C)C,1
+514-10-3,Abietic acid,O=C(O)C1(C)CCCC2(C)C3C(C=C(CC3)C(C)C)=CCC12,1
+32388-55-9,Acetylcedrene,O=C(C1=C(C)C2CC3(C1)C(C)CCC3C2(C)C)C,1
+7493-74-5,Allyl phenoxyacetate,O=C(OCC=C)COC=1C=CC=CC1,1
+122-40-7,Amylcinnamaldehyde,O=CC(=CC=1C=CC=CC1)CCCCC,1
+104-46-1,Anethole,O(C1=CC=C(C=C1)C=CC)C,1
+62-53-3,Aniline,NC=1C=CC=CC1,1
+70356-09-1,Avobenzone,O=C(C1=CC=C(OC)C=C1)CC(=O)C2=CC=C(C=C2)C(C)(C)C,1
+20048-27-5,Bandrowski's base,N(C1=CC=C(N)C=C1)=C2C=C(N)C(=NC3=CC=C(N)C=C3)C=C2N,1
+100-52-7,Benzaldehyde,O=CC=1C=CC=CC1,0
+104-53-0,Benzenepropanal,O=CCCC=1C=CC=CC1,0
+50-32-8,Benzo[a]pyrene,C=1C=CC2=C(C1)C=C3C=CC4=CC=CC=5C=CC2=C3C45,1
+94-09-7,Benzocaine,O=C(OCC)C1=CC=C(N)C=C1,0
+65-85-0,Benzoic acid,O=C(O)C=1C=CC=CC1,0
+98-88-4,Benzoyl chloride,O=C(Cl)C=1C=CC=CC1,1
+94-36-0,Benzoyl peroxide,O=C(OOC(=O)C=1C=CC=CC1)C=2C=CC=CC2,1
+93-91-4,Benzoylacetone,O=C(C=1C=CC=CC1)CC(=O)C,1
+100-51-6,Benzyl alcohol,OCC=1C=CC=CC1,0
+120-51-4,Benzyl benzoate,O=C(OCC=1C=CC=CC1)C=2C=CC=CC2,1
+100-39-0,Benzyl bromide,BrCC=1C=CC=CC1,1
+100-44-7,Benzyl chloride,ClCC=1C=CC=CC1,1
+103-41-3,Benzyl cinnamate,O=C(OCC=1C=CC=CC1)C=CC=2C=CC=CC2,1
+2930-05-4,Benzyl glycidyl ether,O(CC=1C=CC=CC1)CC2OC2,1
+118-58-1,Benzyl salicylate,O=C(OCC=1C=CC=CC1)C=2C=CC=CC2O,1
+1675-54-3,Bisphenol A diglycidyl ether,O(C1=CC=C(C=C1)C(C2=CC=C(OCC3OC3)C=C2)(C)C)CC4OC4,1
+1565-94-2,Bisphenol A diglycidyl ether dimethacrylate,O=C(OCC(O)COC1=CC=C(C=C1)C(C2=CC=C(OCC(O)COC(=O)C(=C)C)C=C2)(C)C)C(=C)C,1
+18127-01-0,Bourgeonal,O=CCCC1=CC=C(C=C1)C(C)(C)C,1
+431-03-8,Butanedione,O=C(C(=O)C)C,1
+141-32-2,Butyl acrylate,O=C(OCCCC)C=C,1
+85-68-7,Butyl benzyl phthalate,O=C(OCC=1C=CC=CC1)C=2C=CC=CC2C(=O)OCCCC,0
+109-65-9,Butyl bromide,BrCCCC,0
+2426-08-6,Butyl glycidyl ether,O(CCCC)CC1OC1,1
+104594-70-9,Caffeic acid phenethyl ester,O=C(OCCC=1C=CC=CC1)C=CC2=CC=C(O)C(O)=C2,1
+5462-06-6,Canthoxal,O=CC(C)CC1=CC=C(OC)C=C1,1
+99-49-0,Carvone,O=C1C(=CCC(C(=C)C)C1)C,1
+108-90-7,Chlorobenzene,ClC=1C=CC=CC1,0
+1897-45-6,Chlorothalonil,N#CC1=C(Cl)C(Cl)=C(Cl)C(C#N)=C1Cl,1
+50-53-3,Chlorpromazine,ClC1=CC=C2SC=3C=CC=CC3N(C2=C1)CCCN(C)C,1
+104-55-2,Cinnamaldehyde,O=CC=CC=1C=CC=CC1,1
+104-54-1,Cinnamyl alcohol,OCC=CC=1C=CC=CC1,1
+2277-19-2,cis-6-Nonenal,O=CCCCCC=CCC,1
+5392-40-5,Citral,O=CC=C(C)CCC=C(C)C,1
+106-22-9,Citronellol,OCCC(C)CCC=C(C)C,1
+7492-67-3,Citronellyloxyacetaldehyde,O=CCOCCC(C)CCC=C(C)C,1
+637-07-0,Clofibrate,O=C(OCC)C(OC1=CC=C(Cl)C=C1)(C)C,0
+23593-75-1,Clotrimazole,ClC=1C=CC=CC1C(C=2C=CC=CC2)(C=3C=CC=CC3)N4C=NC=C4,1
+50-23-7,Cortisol,O=C1C=C2CCC3C4CCC(O)(C(=O)CO)C4(C)CC(O)C3C2(C)CC1,0
+91-64-5,Coumarin,O=C1OC=2C=CC=CC2C=C1,1
+108-77-0,Cyanuric chloride,ClC=1N=C(Cl)N=C(Cl)N1,0
+103-95-7,Cyclamen aldehyde,O=CC(C)CC1=CC=C(C=C1)C(C)C,1
+696-71-9,Cyclooctanol,OC1CCCCCCC1,1
+767-05-5,Cyclopentanepropanol,OCCCC1CCCC1,0
+103-50-4,Dibenzyl ether,O(CC=1C=CC=CC1)CC=2C=CC=CC2,1
+84-74-2,Dibutyl phthalate,O=C(OCCCC)C=1C=CC=CC1C(=O)OCCCC,0
+1680-31-5,Dicaprylyl carbonate,O=C(OCCCCCCCC)OCCCCCCCC,0
+111-42-2,Diethanolamine,OCCNCCO,1
+141-05-9,Diethyl maleate,O=C(OCC)C=CC(=O)OCC,1
+84-66-2,Diethyl phthalate,O=C(OCC)C=1C=CC=CC1C(=O)OCC,0
+5231-87-8,Diethyl squarate,O=C1C(=O)C(OCC)=C1OCC,1
+64-67-5,Diethyl sulfate,O=S(=O)(OCC)OCC,1
+111-46-6,Diethylene glycol,OCCOCCO,1
+5274-61-3,Diethylene glycol monohexadecyl ether,OCCOCCOCCCCCCCCCCCCCCCC,1
+111-40-0,Diethylenetriamine,NCCNCCN,1
+119-84-6,Dihydrocoumarin,O=C1OC=2C=CC=CC2CC1,1
+624-49-7,Dimethyl fumarate,O=C(OC)C=CC(=O)OC,1
+1459-93-4,Dimethyl isophthalate,O=C(OC)C1=CC=CC(=C1)C(=O)OC,1
+77-78-1,Dimethyl sulfate,O=S(=O)(OC)OC,0
+67-71-0,Dimethyl sulfone,O=S(=O)(C)C,0
+67-68-5,Dimethyl sulfoxide (DMSO),O=S(C)C,1
+68-12-2,Dimethylformamide,O=CN(C)C,0
+70-34-8,Dinitrofluorobenzene,O=N(=O)C1=CC=C(F)C(=C1)N(=O)=O,1
+886-38-4,Diphenylcyclopropenone,O=C1C(C=2C=CC=CC2)=C1C=3C=CC=CC3,1
+101-68-8,Diphenylmethane diisocyanate,O=C=NC1=CC=C(C=C1)CC2=CC=C(N=C=O)C=C2,1
+10191-41-0,DL-α-Tocopherol,OC=1C(=C(C=2OC(C)(CCC2C1C)CCCC(C)CCCC(C)CCCC(C)C)C)C,1
+1166-52-5,Dodecyl gallate,O=C(OCCCCCCCCCCCC)C1=CC(O)=C(O)C(O)=C1,1
+89-25-8,Edaravone,O=C1N(N=C(C)C1)C=2C=CC=CC2,1
+140-67-0,Estragole,O(C1=CC=C(C=C1)CC=C)C,1
+140-88-5,Ethyl acrylate,O=C(OCC)C=C,1
+94-02-0,Ethyl benzoylacetate,O=C(OCC)CC(=O)C=1C=CC=CC1,0
+105-95-3,Ethylene brassylate,O=C1OCCOC(=O)CCCCCCCCCCC1,0
+97-90-5,Ethylene glycol dimethacrylate,O=C(OCCOC(=O)C(=C)C)C(=C)C,1
+2136-71-2,Ethylene glycol monohexadecyl ether,OCCOCCCCCCCCCCCCCCCC,1
+110-49-6,Ethylene glycol monomethyl ether acetate,O=C(OCCOC)C,0
+107-15-3,Ethylenediamine,NCCN,1
+121-32-4,Ethylvanillin,O=CC1=CC=C(O)C(OCC)=C1,0
+97-53-0,Eugenol,OC1=CC=C(C=C1OC)CC=C,1
+93-28-7,Eugenyl acetate,O=C(OC1=CC=C(C=C1OC)CC=C)C,1
+19317-11-4,Farnesal,O=CC=C(C)CCC=C(C)CCC=C(C)C,1
+4602-84-0,Farnesol,OCC=C(C)CCC=C(C)CCC=C(C)C,1
+3326-32-7,Fluorescein 5-isothiocyanate,O=C1OC2(C3=CC=C(O)C=C3OC4=CC(O)=CC=C42)C5=CC=C(N=C=S)C=C15,1
+59-30-3,Folic acid,O=C1N=C(N=C2NC=C(N=C12)CNC3=CC=C(C=C3)C(=O)NC(C(=O)O)CCC(=O)O)N,0
+50-00-0,Formaldehyde,O=C,1
+110-17-8,Fumaric acid,O=C(O)C=CC(=O)O,0
+492-94-4,Furil,O=C(C=1OC=CC1)C(=O)C=2OC=CC2,0
+446-72-0,Genistein,O=C1C(=COC=2C=C(O)C=C(O)C12)C=3C=CC(O)=CC3,0
+106-24-1,Geraniol,OCC=C(C)CCC=C(C)C,1
+5146-66-7,Geranyl nitrile,N#CC=C(C)CCC=C(C)C,1
+50-99-7,Glucose,O=CC(O)C(O)C(O)C(O)CO,0
+111-30-8,Glutaraldehyde,O=CCCCC=O,1
+56-81-5,Glycerol,OCC(O)CO,0
+112-07-2,Glycol monobutyl ether acetate,O=C(OCCOCCCC)C,0
+107-22-2,Glyoxal,O=CC=O,1
+99788-75-7,HC Blue 14,O=C1C=2C=CC=CC2C(=O)C=3C(=CC=C(NCC(O)CO)C13)NCC(O)CO,1
+33229-34-4,HC Blue 2,O=N(=O)C1=CC(=CC=C1NCCO)N(CCO)CCO,0
+85765-48-6,HC Orange 2,O=N(=O)C1=CC(OCCO)=CC=C1NCCN,1
+2871-01-4,HC Red 3,O=N(=O)C1=CC(N)=CC=C1NCCO,1
+82576-75-8,HC Violet 1,O=N(=O)C=1C=C(NCCO)C(=CC1N)C,1
+104226-19-9,HC Violet 2,O=N(=O)C1=CC(=CC=C1NCCCO)N(CCO)CCO,1
+109023-83-8,HC YELLOW NO. 10,O=N(=O)C1=CC(Cl)=C(C=C1NCCO)NCCO,1
+104226-21-3,HC YELLOW NO. 7,OCCN(C1=CC=C(N=NC2=CC=C(N)C=C2)C(=C1)C)CCO,0
+24851-98-7,Hedione,O=C(OC)CC1CCC(=O)C1CCCCC,0
+1205-17-0,Helional,O=CC(C)CC1=CC=C2OCOC2=C1,1
+85-42-7,Hexahydrophthalic anhydride,O=C1OC(=O)C2CCCCC12,1
+822-06-0,Hexamethylene diisocyanate,O=C=NCCCCCCN=C=O,1
+110-54-3,Hexane,CCCCCC,0
+10032-15-2,Hexyl 2-methylbutanoate,O=C(OCCCCCC)C(C)CC,0
+6259-76-3,Hexyl salicylate,O=C(OCCCCCC)C=1C=CC=CC1O,1
+123-31-9,Hydroquinone,OC1=CC=C(O)C=C1,1
+107-75-5,Hydroxycitronellal,O=CCC(C)CCCC(O)(C)C,1
+10597-60-1,Hydroxytyrosol,OC1=CC=C(C=C1O)CCO,1
+39236-46-9,Imidazolidinyl urea,O=C(NCNC(=O)NC1C(=O)NC(=O)N1CO)NC2C(=O)NC(=O)N2CO,1
+91-56-5,Isatin,O=C1NC=2C=CC=CC2C1=O,1
+54464-57-2,Iso-E Super,O=C(C)C1(C)CC2=C(CCCC2(C)C)CC1C,1
+123-51-3,Isoamyl alcohol,OCCC(C)C,0
+125-12-2,Isobornyl acetate,O=C(OC1CC2CCC1(C)C2(C)C)C,0
+1335-66-6,Isocyclocitral,CC1=CCC(C=O)C(C)C1C,1
+68527-77-5,Isocyclogeraniol,OCC1C(C=C(C)CC1C)C,0
+97-54-1,Isoeugenol,OC1=CC=C(C=CC)C=C1OC,1
+93-29-8,"Isoeugenol, acetate",O=C(OC1=CC=C(C=CC)C=C1OC)C,1
+3371-50-4,Isomaltotriose,O=CC(O)C(O)C(O)C(O)COC1OC(COC2OC(CO)C(O)C(O)C2O)C(O)C(O)C1O,0
+127-51-5,Isomethyl-α-ionone,O=C(C(=CC1C(=CCCC1(C)C)C)C)C,1
+4098-71-9,Isophorone diisocyanate,O=C=NCC1(C)CC(N=C=O)CC(C)(C)C1,1
+67-63-0,Isopropanol,OC(C)C,0
+110-27-0,Isopropyl myristate,O=C(OC(C)C)CCCCCCCCCCCCC,1
+59-01-8,Kanamycin A,OCC1OC(OC2C(O)C(OC3OC(CN)C(O)C(O)C3O)C(N)CC2N)C(O)C(N)C1O,1
+50-21-5,Lactic acid,O=C(O)C(O)C,0
+80-54-6,Lilial,O=CC(C)CC1=CC=C(C=C1)C(C)(C)C,1
+115-95-7,Linalyl acetate,O=C(OC(C=C)(C)CCC=C(C)C)C,1
+31906-04-4,Liral,O=CC1CC=C(CCCC(O)(C)C)CC1,1
+108-45-2,m-Phenylenediamine,NC1=CC=CC(N)=C1,1
+103694-68-4,Majantol,OCC(C)(C)CC=1C=CC=C(C1)C,0
+110-16-7,Maleic acid,O=C(O)C=CC(=O)O,0
+108-31-6,Maleic anhydride,O=C1OC(=O)C=C1,1
+89-71-4,Methyl 2-methylbenzoate,O=C(OC)C=1C=CC=CC1C,1
+111-80-8,Methyl 2-nonynoate,O=C(C#CCCCCCC)OC,1
+111-12-6,Methyl 2-octynoate,O=C(C#CCCCCC)OC,1
+3395-91-3,Methyl 3-bromopropanoate,O=C(OC)CCBr,0
+96-33-3,Methyl acrylate,O=C(OC)C=C,1
+134-20-3,Methyl anthranilate,O=C(OC)C=1C=CC=CC1N,1
+66-27-3,Methyl methanesulfonate,O=S(=O)(OC)C,1
+600-22-6,Methyl pyruvate,O=C(OC)C(=O)C,1
+119-36-8,Methyl salicylate,O=C(OC)C=1C=CC=CC1O,0
+93-16-3,Methylisoeugenol,O(C1=CC=C(C=CC)C=C1OC)C,0
+2682-20-4,Methylisothiazolinone,O=C1C=CSN1C,1
+99-76-3,Methylparaben,O=C(OC)C1=CC=C(O)C=C1,0
+37677-14-8,Myrac aldehyde,O=CC1CC=C(CCC=C(C)C)CC1,0
+759-73-9,N-Ethyl-N-nitrosourea,O=NN(C(=O)N)CC,1
+85618-20-8,n-Heptyl β-D-thioglucoside,OCC1OC(SCCCCCCC)C(O)C(O)C1O,1
+613-29-6,"N,N-Dibutylbenzenamine",C=1C=CC(=CC1)N(CCCC)CCCC,1
+134-62-3,"N,N-Diethyl-m-toluamide",O=C(C1=CC=CC(=C1)C)N(CC)CC,0
+109-55-7,"N,N-Dimethyl-1,3-propanediamine",NCCCN(C)C,1
+138-89-6,"N,N-Dimethyl-4-nitrosoaniline",O=NC1=CC=C(C=C1)N(C)C,1
+2650-64-8,N2-[(Phenylmethoxy)carbonyl]-L-glutamine,O=C(OCC=1C=CC=CC1)NC(C(=O)O)CCC(=O)N,1
+5307-14-2,Nitro-p-phenylenediamine,O=N(=O)C1=CC(N)=CC=C1N,1
+112-05-0,Nonanoic acid,O=C(O)CCCCCCCC,1
+764-85-2,Nonanoyl chloride,O=C(Cl)CCCCCCCC,1
+124-12-9,Octanenitrile,N#CCCCCCCC,0
+124-07-2,Octanoic acid,O=C(O)CCCCCCC,0
+6197-30-4,Octocrylene,N#CC(C(=O)OCC(CC)CCCC)=C(C=1C=CC=CC1)C=2C=CC=CC2,1
+629-82-3,Octyl ether,O(CCCCCCCC)CCCCCCCC,0
+1034-01-1,Octyl gallate,O=C(OCCCCCCCC)C1=CC(O)=C(O)C(O)=C1,1
+144-62-7,Oxalic acid,O=C(O)C(=O)O,1
+15646-46-5,Oxazolone,O=C1OC(=NC1=COCC)C=2C=CC=CC2,1
+2345-34-8,p-Acetoxybenzoic acid,O=C(O)C1=CC=C(OC(=O)C)C=C1,1
+106-50-3,p-Phenylenediamine,NC1=CC=C(N)C=C1,1
+112-67-4,Palmitoyl chloride,O=C(Cl)CCCCCCCCCCCCCCC,1
+61-33-6,Penicillin G,O=C(O)C1N2C(=O)C(NC(=O)CC=3C=CC=CC3)C2SC1(C)C,1
+87-86-5,Pentachlorophenol,ClC=1C(Cl)=C(Cl)C(O)=C(Cl)C1Cl,1
+3524-68-3,Pentaerythritol triacrylate,O=C(OCC(CO)(COC(=O)C=C)COC(=O)C=C)C=C,1
+2111-75-3,Perillaldehyde,O=CC1=CCC(C(=C)C)CC1,1
+103-63-9,Phenethyl bromide,BrCCC=1C=CC=CC1,1
+108-95-2,Phenol,OC=1C=CC=CC1,0
+122-59-8,Phenoxyacetic acid,O=C(O)COC=1C=CC=CC1,0
+122-99-6,Phenoxyethanol,OCCOC=1C=CC=CC1,0
+103-60-6,Phenoxyethyl isobutyrate,O=C(OCCOC=1C=CC=CC1)C(C)C,0
+93-99-2,Phenyl benzoate,O=C(OC=1C=CC=CC1)C=2C=CC=CC2,1
+122-60-1,Phenyl glycidyl ether,O(C=1C=CC=CC1)CC2OC2,1
+122-78-1,Phenylacetaldehyde,O=CCC=1C=CC=CC1,1
+140-26-1,Phenylethyl isovalerate,O=C(OCCC=1C=CC=CC1)CC(C)C,1
+85-44-9,Phthalic anhydride,O=C1OC(=O)C=2C=CC=CC12,1
+88-88-0,Picryl chloride,O=N(=O)C=1C=C(C(Cl)=C(C1)N(=O)=O)N(=O)=O,1
+121-79-9,Propyl gallate,O=C(OCCC)C1=CC(O)=C(O)C(O)=C1,1
+17369-59-4,Propylidenephthalide,O=C1OC(=CCC)C=2C=CC=CC12,1
+94-13-3,Propylparaben,O=C(OCCC)C1=CC=C(O)C=C1,0
+110-86-1,Pyridine,N=1C=CC=CC1,1
+106-51-4,Quinone,O=C1C=CC(=O)C=C1,1
+6485-40-1,R-Carvone,O=C1C(=CCC(C(=C)C)C1)C,1
+108-46-3,Resorcinol,OC1=CC=CC(O)=C1,1
+81-07-2,Saccharin,O=C1NS(=O)(=O)C=2C=CC=CC12,0
+116-26-7,Safranal,O=CC1=C(C=CCC1(C)C)C,1
+69-72-7,Salicylic acid,O=C(O)C=1C=CC=CC1O,1
+515-03-7,Sclareol,OC(C=C)(C)CCC1C(O)(C)CCC2C(C)(C)CCCC12C,0
+6658-48-6,Silvial,O=CC(C)CC1=CC=C(C=C1)CC(C)C,1
+2892-51-5,Squaric acid,O=C1C(=O)C(O)=C1O,1
+110-15-6,Succinic acid,O=C(O)CCC(=O)O,1
+63-74-1,Sulfanilamide,O=S(=O)(N)C1=CC=C(N)C=C1,0
+121-57-3,Sulfanilic acid,O=S(=O)(O)C1=CC=C(N)C=C1,0
+480-18-2,Taxifolin,O=C1C=2C(O)=CC(O)=CC2OC(C3=CC=C(O)C(O)=C3)C1O,1
+137-26-8,Tetramethylthiuram disulfide,S=C(SSC(=S)N(C)C)N(C)C,1
+96-27-5,Thioglycerol,OCC(O)CS,1
+584-84-9,"Toluene 2,4-diisocyanate",O=C=NC1=CC=C(C(N=C=O)=C1)C,1
+6728-26-3,trans-2-Hexenal,O=CC=CCCC,1
+1896-62-4,trans-4-Phenyl-3-buten-2-one,O=C(C=CC=1C=CC=CC1)C,1
+102-71-6,Triethanolamine,OCCN(CCO)CCO,0
+552-30-7,Trimellitic anhydride,O=C(O)C1=CC=C2C(=O)OC(=O)C2=C1,1
+2508-19-2,Trinitrobenzenesulfonic acid,O=N(=O)C=1C=C(C(=C(C1)N(=O)=O)S(=O)(=O)O)N(=O)=O,1
+68039-49-6,Triplal,O=CC1CCC(=CC1C)C,1
+533-75-5,Tropolone,O=C1C=CC=CC=C1O,1
+112-38-9,Undecylenic acid,O=C(O)CCCCCCCCC=C,1
+121-33-5,Vanillin,O=CC1=CC=C(O)C(OC)=C1,0
+117-98-6,Vetivert acetate,O=C(OC1C=C(C)C2CC(=C(C)C)CC2C(C)C1)C,0
+75-35-4,Vinylidene chloride,ClC(Cl)=C,0
+1330-20-7,Xylene,CC1=CC=C(C)C=C1,1
+7779-78-4,α-(2-Methylpropyl)benzeneethanol,OC(CC=1C=CC=CC1)CC(C)C,1
+101-85-9,α-Amylcinnamyl alcohol,OCC(=CC=1C=CC=CC1)CCCCC,0
+56973-85-4,α-Dynascone,O=C(C1=CCCC(C)(C)C1)CCC=C,1
+101-86-0,α-Hexylcinnamaldehyde,O=CC(=CC=1C=CC=CC1)CCCCCC,1
+101-39-3,α-Methylcinnamaldehyde,O=CC(=CC=1C=CC=CC1)C,1
+23726-91-2,β-Damascone,O=C(C=CC)C1=C(C)CCCC1(C)C,1
+57378-68-4,δ-Damascone,O=C(C=CC)C1C(C=CCC1(C)C)C,1

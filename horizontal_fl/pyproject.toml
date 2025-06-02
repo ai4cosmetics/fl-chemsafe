@@ -1,0 +1,17 @@
+[project]
+name = "horizontal-fl-chemsafe"
+version = "0.1.0"
+description = "Horizontal Federated Learning for Chemical Safety Prediction"
+dependencies = [
+    "pandas>=2.2.3",
+    "numpy>=2.2.6",
+    "scikit-learn>=1.6.1",
+    "xgboost>=3.0.2",
+    "rdkit>=2025.3.2",
+    "flower>=1.18.0",
+    "imbalanced-learn>=0.13.0",
+    "molvs>=0.1.1",
+    "plotly>=6.1.2",
+    "umap-learn>=0.5.7",
+    "kaleido>=0.2.1",
+]

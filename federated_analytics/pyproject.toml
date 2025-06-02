@@ -1,0 +1,10 @@
+[project]
+name = "federated-analytics"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+flwr = "1.18.0"
+numpy = "2.2.6"
+pandas = "2.2.3"
+plotly = "6.1.2"

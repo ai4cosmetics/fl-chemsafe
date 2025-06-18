@@ -7,12 +7,12 @@ name = "smiles-fl"
 version = "1.0.0"
 description = "Federated Learning for SMILES CNNs with non-IID data"
 dependencies = [
-    "flwr[simulation]>=1.18.0",
+    "flwr[simulation]==1.18.0",
     "torch>=2.2.2",
-    "numpy>=1.26.4",
+    "numpy>=1.26.4,<2.0",
     "pandas>=2.2.3",
     "rdkit>=2025.3.2",
-    "scikit-learn>=1.6.1",
+    "scikit-learn>=1.6.1,<1.7",
     "plotly>=5.18.0",
     "kaleido>=0.2.1",
 ]

@@ -8,8 +8,9 @@ from pathlib import Path
 
 def load_existing_results():
     """Load existing performance results."""
-    federated_path = Path("results/federated_results.json")
-    local_path = Path("results/local_model_results.json")
+    base_dir = Path(__file__).parent
+    federated_path = base_dir / "results/federated_results.json"
+    local_path = base_dir / "results/local_model_results.json"
     
     if not federated_path.exists() or not local_path.exists():
         print("No results found")
@@ -154,7 +155,7 @@ def main():
     if results is None:
         return
     
-    plots_dir = Path("plots")
+    plots_dir = Path(__file__).parent / "plots"
     plots_dir.mkdir(exist_ok=True)
     
     fig1 = create_performance_comparison_chart(results)

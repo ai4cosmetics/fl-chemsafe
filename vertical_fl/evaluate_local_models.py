@@ -6,6 +6,11 @@ import torch.nn as nn
 from sklearn.metrics import accuracy_score, roc_auc_score, precision_score, recall_score, f1_score
 import json
 from pathlib import Path
+import os, sys
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.dirname(__file__))
+from vertical_fl.task import SMILESCNNModel
 
 # Set seeds for reproducibility
 torch.manual_seed(42)
@@ -15,36 +20,6 @@ if torch.cuda.is_available():
 
 # CPU optimizations
 torch.set_num_threads(4)
-
-
-class SMILESCNNModel(nn.Module):
-    """CNN for SMILES sequences."""
-    
-    def __init__(self, vocab_size=36, embedding_dim=32):
-        super().__init__()
-        
-        self.embedding = nn.Embedding(vocab_size, embedding_dim)
-        self.conv1 = nn.Conv1d(embedding_dim, 64, kernel_size=3, stride=1)
-        self.pool1 = nn.MaxPool1d(kernel_size=2, stride=2)
-        self.conv2 = nn.Conv1d(64, 128, kernel_size=3, stride=1)
-        self.pool2 = nn.MaxPool1d(kernel_size=2, stride=2)
-        self.global_max_pool = nn.AdaptiveMaxPool1d(1)
-        self.fc = nn.Linear(128, 1)
-        
-    def forward(self, x):
-        embedded = self.embedding(x)
-        embedded = embedded.transpose(1, 2)
-        
-        x = torch.relu(self.conv1(embedded))
-        x = self.pool1(x)
-        x = torch.relu(self.conv2(x))
-        x = self.pool2(x)
-        
-        x = self.global_max_pool(x)
-        x = x.view(x.size(0), -1)
-        x = self.fc(x)
-        
-        return x
 
 
 def load_data():

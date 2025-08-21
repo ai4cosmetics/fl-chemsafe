@@ -12,7 +12,7 @@ This project implements and compares **federated vs local approaches** for mutag
 ## Setup
 
 1. Install dependencies:
-   ```bash
+   ```bash copy
    pip install flwr torch scikit-learn pandas numpy plotly rdkit kaleido
    ```
 
@@ -21,23 +21,23 @@ This project implements and compares **federated vs local approaches** for mutag
 ## Usage
 
 ### 1. Prepare Data
-```bash
+```bash copy
 cd vertical_fl
 python data_preparation.py
 ```
 
 ### 2. Run Federated Learning
-```bash
+```bash copy
 flwr run .
 ```
 
 ### 3. Evaluate Local Models
-```bash
+```bash copy
 python evaluate_local_models.py
 ```
 
 ### 4. Create Visualizations
-```bash
+```bash copy
 python create_performance_visualization.py
 ```
 
@@ -65,9 +65,9 @@ vertical_fl/plots/performance_radar.png
 - `data_preparation.py`: SMILES tokenization and non-IID data splitting
 
 ### Federated Learning
-- `server_app.py`: Flower server for coordinating federated CNN training
-- `client_app.py`: Flower client for local CNN training on private SMILES data
-- `task.py`: SMILES CNN model definition and training utilities
+- `vertical_fl/server_app.py`: Flower server for coordinating federated CNN training
+- `vertical_fl/client_app.py`: Flower client for local CNN training on private SMILES data
+- `vertical_fl/task.py`: SMILES CNN model definition and training utilities
 - `pyproject.toml`: Flower project configuration
 
 ### Local Model Evaluation
@@ -93,3 +93,6 @@ vertical_fl/plots/performance_radar.png
 - **Convergence**: 10 rounds typically sufficient for stable federated performance
 - **Evaluation Metrics**: AUC, Accuracy, Precision, Recall, F1-score
 - **Results**: Federated model achieves balanced performance, outperforming individual local models
+
+## Data Source
+- Xu C, Cheng F, Chen L, Du Z, Li W, Liu G, Lee PW, Tang Y. In silico prediction of chemical Ames mutagenicity. J Chem Inf Model. 2012, 52(11):2840-7. https://pubs.acs.org/doi/10.1021/ci300400a

@@ -46,17 +46,19 @@ cd vertical_fl/
 fl-chemsafe/
 ├── federated_analytics/                     # Privacy-preserving histogram aggregation
 │   ├── README.md                            # Setup and usage instructions
-│   ├── client_app.py                        # Flower client implementation
-│   ├── server_app.py                        # Flower server implementation  
-│   ├── task.py                              # Data loading and model logic
+│   ├── federated_analytics/                 # Federated learning implementation
+│   │   ├── client_app.py                    # Flower client implementation
+│   │   ├── server_app.py                    # Flower server implementation  
+│   │   └── task.py                          # Data loading and model logic
 │   ├── pyproject.toml                       # Python dependencies
 │   ├── data/                                # Datasets
 │   └── plots/                               # Generated visualisations
 ├── horizontal_fl/                           # XGBoost federated learning
 │   ├── README.md                            # Setup and usage instructions
-│   ├── client_app.py                        # Flower client implementation
-│   ├── server_app.py                        # Flower server implementation
-│   ├── task.py                              # XGBoost model logic
+│   ├── horizontal_fl/                       # Federated learning implementation
+│   │   ├── client_app.py                    # Flower client implementation
+│   │   ├── server_app.py                    # Flower server implementation
+│   │   └── task.py                          # XGBoost model logic
 │   ├── data_preparation.py                  # Dataset preprocessing
 │   ├── baseline_models_evaluation.py        # Performance comparison
 │   ├── create_performance_plot.py           # Performance visualisation
@@ -68,12 +70,13 @@ fl-chemsafe/
 │   └── plots/                               # Generated visualisations
 ├── vertical_fl/                             # SMILES CNN federated learning
 │   ├── README.md                            # Setup and usage instructions  
-│   ├── client_app.py                        # Flower client implementation
-│   ├── server_app.py                        # Flower server implementation
-│   ├── task.py                              # CNN model and data logic
+│   ├── vertical_fl/                         # Federated learning implementation
+│   │   ├── client_app.py                    # Flower client implementation
+│   │   ├── server_app.py                    # Flower server implementation
+│   │   └── task.py                          # CNN model and data logic
 │   ├── data_preparation.py                  # Non-IID data splits
 │   ├── evaluate_local_models.py             # Local model evaluation
-│   ├── create_performance_visualization.py  # Performance plots
+│   ├── create_performance_visualization.py   # Performance plots
 │   ├── pyproject.toml                       # Python dependencies
 │   ├── data/                                # Datasets
 │   ├── results/                             # Evaluation results

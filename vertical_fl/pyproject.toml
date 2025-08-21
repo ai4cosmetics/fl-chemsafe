@@ -7,9 +7,9 @@ name = "smiles-fl"
 version = "1.0.0"
 description = "Federated Learning for SMILES CNNs with non-IID data"
 dependencies = [
-    "flwr[simulation]==1.18.0",
+    "flwr[simulation]==1.20.0",
     "torch>=2.2.2",
-    "numpy>=1.26.4,<2.0",
+    "numpy>=1.26.4",
     "pandas>=2.2.3",
     "rdkit>=2025.3.2",
     "scikit-learn>=1.6.1,<1.7",
@@ -24,8 +24,8 @@ packages = ["."]
 publisher = "chemfl"
 
 [tool.flwr.app.components]
-serverapp = "server_app:app"
-clientapp = "client_app:app"
+serverapp = "vertical_fl.server_app:app"
+clientapp = "vertical_fl.client_app:app"
 
 [tool.flwr.app.config]
 num-server-rounds = 10

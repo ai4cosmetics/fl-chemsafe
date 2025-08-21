@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Generated files
+data/*
+!data/*.csv
+results/
+plots/
+models/
+
+# System files
+.DS_Store

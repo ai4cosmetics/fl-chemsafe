@@ -10,7 +10,7 @@ This project demonstrates federated analytics using Flower, where each client co
 ## Setup
 
 1. Install dependencies:
-   ```bash
+   ```bash copy
    pip install flwr numpy pandas matplotlib plotly
    ```
 
@@ -19,12 +19,12 @@ This project demonstrates federated analytics using Flower, where each client co
 ## Usage
 
 ### 1. Start the server (in one terminal):
-```bash
+```bash copy
 python federated_analytics/server_app.py
 ```
 
 ### 2. In three other terminals, run each client:
-```bash
+```bash copy
 LOCAL_DATASET=federated_analytics/data/HuskinDB_clean.csv python federated_analytics/client_app.py
 
 LOCAL_DATASET=federated_analytics/data/SkinPiX_clean.csv python federated_analytics/client_app.py
@@ -40,7 +40,7 @@ federated_analytics/plots/federated_histogram_comparison.png
 
 ### 4. (Optional) Generate initial dataset plots
 To generate plots of all datasets and individual histograms, run:
-```
+```bash copy
 python federated_analytics/task.py
 ```
 The plots will be saved in the `federated_analytics/plots/` directory.
@@ -67,3 +67,8 @@ The plots will be saved in the `federated_analytics/plots/` directory.
 - Clients automatically handle both rounds without manual intervention.
 - The server stops automatically after completing both rounds and generating the comparison plot.
 - To experiment with privacy levels, modify the `epsilon` parameter in `client_app.py` lines 23-24.
+
+## Data Sources
+- Chedik, L., Baybekov, S., Cosnier, F. et al. An update of skin permeability data based on a systematic review of recent research. Sci Data 11, 224 (2024). https://doi.org/10.1038/s41597-024-03026-4
+- Stepanov, D., Canipa, S. & Wolber, G. HuskinDB, a database for skin permeation of xenobiotics. Sci Data 7, 426 (2020). https://doi.org/10.1038/s41597-020-00764-z
+- Stevens, J.N., Prockter, A.K., Fisher, H.A. et al. A database of chemical absorption in human skin with mechanistic modeling applications. Sci Data 11, 755 (2024). https://doi.org/10.1038/s41597-024-03588-3

@@ -117,6 +117,9 @@ def evaluate_model(model: torch.nn.Module, test_data: torch.Tensor, test_labels:
         precision = precision_score(y_true, y_pred, zero_division=0)
         recall = recall_score(y_true, y_pred, zero_division=0)
         f1 = f1_score(y_true, y_pred, zero_division=0)
+        
+        # Calculate False Negative Rate (FNR = 1 - Recall)
+        fnr = 1 - recall
     
     return {
         "accuracy": accuracy,
@@ -124,5 +127,6 @@ def evaluate_model(model: torch.nn.Module, test_data: torch.Tensor, test_labels:
         "auc": auc,
         "precision": precision,
         "recall": recall,
-        "f1": f1
+        "f1": f1,
+        "fnr": fnr
     } 

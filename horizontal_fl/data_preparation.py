@@ -104,32 +104,40 @@ class DataPreparator:
     def create_data_splits(self, combined):
         def split_client_data(data):
             if len(data) == 0:
-                return tuple(np.array([]).reshape(0, len(self.feature_names)) if i % 2 == 0 else np.array([]) for i in range(4))
+                return tuple(np.array([]).reshape(0, len(self.feature_names)) if i % 2 == 0 else np.array([]) for i in range(6))
             unique_mols = data.groupby('std_smiles')['LLNA'].first().reset_index()
+            # Sort by SMILES to ensure consistent ordering across runs
+            unique_mols = unique_mols.sort_values('std_smiles').reset_index(drop=True)
             try:
                 train_smiles, test_smiles = train_test_split(unique_mols['std_smiles'].values, test_size=0.2, random_state=self.random_state, 
                                                            stratify=unique_mols['LLNA'].values if unique_mols['LLNA'].value_counts().min() >= 2 else None)
             except:
                 train_smiles, test_smiles = train_test_split(unique_mols['std_smiles'].values, test_size=0.2, random_state=self.random_state)
             train_data, test_data = data[data['std_smiles'].isin(train_smiles)], data[data['std_smiles'].isin(test_smiles)]
-            return train_data[self.feature_names].values, train_data['LLNA'].values, test_data[self.feature_names].values, test_data['LLNA'].values
+            return (train_data[self.feature_names].values, train_data['LLNA'].values, train_data['std_smiles'].values,
+                    test_data[self.feature_names].values, test_data['LLNA'].values, test_data['std_smiles'].values)
 
         ai4_splits, skin_splits = split_client_data(self.ai4_full), split_client_data(self.skin_full)
         X_combined_train = np.vstack([d for d in [ai4_splits[0], skin_splits[0]] if len(d) > 0]) if any(len(d) > 0 for d in [ai4_splits[0], skin_splits[0]]) else np.array([]).reshape(0, len(self.feature_names))
         y_combined_train = np.hstack([l for l in [ai4_splits[1], skin_splits[1]] if len(l) > 0]) if any(len(l) > 0 for l in [ai4_splits[1], skin_splits[1]]) else np.array([])
-        X_global_test = np.vstack([d for d in [ai4_splits[2], skin_splits[2]] if len(d) > 0]) if any(len(d) > 0 for d in [ai4_splits[2], skin_splits[2]]) else np.array([]).reshape(0, len(self.feature_names))
-        y_global_test = np.hstack([l for l in [ai4_splits[3], skin_splits[3]] if len(l) > 0]) if any(len(l) > 0 for l in [ai4_splits[3], skin_splits[3]]) else np.array([])
+        smiles_combined_train = np.hstack([s for s in [ai4_splits[2], skin_splits[2]] if len(s) > 0]) if any(len(s) > 0 for s in [ai4_splits[2], skin_splits[2]]) else np.array([])
+        X_global_test = np.vstack([d for d in [ai4_splits[3], skin_splits[3]] if len(d) > 0]) if any(len(d) > 0 for d in [ai4_splits[3], skin_splits[3]]) else np.array([]).reshape(0, len(self.feature_names))
+        y_global_test = np.hstack([l for l in [ai4_splits[4], skin_splits[4]] if len(l) > 0]) if any(len(l) > 0 for l in [ai4_splits[4], skin_splits[4]]) else np.array([])
+        smiles_global_test = np.hstack([s for s in [ai4_splits[5], skin_splits[5]] if len(s) > 0]) if any(len(s) > 0 for s in [ai4_splits[5], skin_splits[5]]) else np.array([])
         
         if len(X_combined_train) > 0:
             self.scaler.fit(X_combined_train)
-            ai4_splits = (self.scaler.transform(ai4_splits[0]) if len(ai4_splits[0]) > 0 else ai4_splits[0], ai4_splits[1],
-                         self.scaler.transform(ai4_splits[2]) if len(ai4_splits[2]) > 0 else ai4_splits[2], ai4_splits[3])
-            skin_splits = (self.scaler.transform(skin_splits[0]) if len(skin_splits[0]) > 0 else skin_splits[0], skin_splits[1],
-                          self.scaler.transform(skin_splits[2]) if len(skin_splits[2]) > 0 else skin_splits[2], skin_splits[3])
+            ai4_splits = (self.scaler.transform(ai4_splits[0]) if len(ai4_splits[0]) > 0 else ai4_splits[0], ai4_splits[1], ai4_splits[2],
+                         self.scaler.transform(ai4_splits[3]) if len(ai4_splits[3]) > 0 else ai4_splits[3], ai4_splits[4], ai4_splits[5])
+            skin_splits = (self.scaler.transform(skin_splits[0]) if len(skin_splits[0]) > 0 else skin_splits[0], skin_splits[1], skin_splits[2],
+                          self.scaler.transform(skin_splits[3]) if len(skin_splits[3]) > 0 else skin_splits[3], skin_splits[4], skin_splits[5])
             X_combined_train, X_global_test = self.scaler.transform(X_combined_train), self.scaler.transform(X_global_test)
         
-        return {'global_test': (X_global_test, y_global_test), 'ai4cosmetics': {'train': (ai4_splits[0], ai4_splits[1]), 'test': (ai4_splits[2], ai4_splits[3])}, 
-                'skindoctorcp': {'train': (skin_splits[0], skin_splits[1]), 'test': (skin_splits[2], skin_splits[3])}, 'combined_train': (X_combined_train, y_combined_train), 'feature_names': self.feature_names}
+        return {'global_test': (X_global_test, y_global_test, smiles_global_test), 
+                'ai4cosmetics': {'train': (ai4_splits[0], ai4_splits[1], ai4_splits[2]), 'test': (ai4_splits[3], ai4_splits[4], ai4_splits[5])}, 
+                'skindoctorcp': {'train': (skin_splits[0], skin_splits[1], skin_splits[2]), 'test': (skin_splits[3], skin_splits[4], skin_splits[5])}, 
+                'combined_train': (X_combined_train, y_combined_train, smiles_combined_train), 
+                'feature_names': self.feature_names}
 
 def prepare_data(force_reprocess=False, **kwargs):
     cache_file = Path('data/processed_data_splits.pkl')
@@ -150,13 +158,14 @@ def load_data_splits(): return prepare_data(False)
 
 if __name__ == "__main__":
     try:
-        data = prepare_data()
+        data = prepare_data(force_reprocess=True)  # Force reprocess to create new cache format
         print(f"Data loaded successfully:")
         print(f"  AI4Cosmetics - Train: {len(data['ai4cosmetics']['train'][0])}, Test: {len(data['ai4cosmetics']['test'][0])}")
         print(f"  SkinDoctorCP - Train: {len(data['skindoctorcp']['train'][0])}, Test: {len(data['skindoctorcp']['test'][0])}")
         print(f"  Combined training set: {len(data['combined_train'][0])} samples")
         print(f"  Global test set: {len(data['global_test'][0])} samples")
         print(f"  Features: {len(data['feature_names'])}")
+        print(f"  SMILES included: ✓")
     except Exception as e:
         print(f"Error: {e}")
         raise 

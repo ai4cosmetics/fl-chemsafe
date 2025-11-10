@@ -41,13 +41,14 @@ def get_client_data(client_name):
     data_splits = load_data_splits()
     
     if client_name == 'ai4cosmetics':
-        return data_splits['ai4cosmetics']['train']
+        return data_splits['ai4cosmetics']['train'][0], data_splits['ai4cosmetics']['train'][1]
     elif client_name == 'skindoctorcp':
-        return data_splits['skindoctorcp']['train']
+        return data_splits['skindoctorcp']['train'][0], data_splits['skindoctorcp']['train'][1]
     else:
         raise ValueError(f"Unknown client: {client_name}")
 
 
 def get_global_test_data():
     """Get global test data for evaluation"""
-    return load_data_splits()['global_test']
+    splits = load_data_splits()
+    return splits['global_test'][0], splits['global_test'][1]

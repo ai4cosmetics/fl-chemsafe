@@ -12,9 +12,9 @@ This project implements and compares **three distinct ML approaches** for skin s
 
 ## Setup
 
-1. Install dependencies:
+1. Install the project and all dependencies:
 ```bash copy
-pip install flwr xgboost scikit-learn pandas numpy umap-learn plotly rdkit
+pip install -e .
 ```
 
 2. Ensure your data files are in `horizontal_fl/data/`.

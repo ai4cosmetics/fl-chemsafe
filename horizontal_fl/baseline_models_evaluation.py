@@ -58,7 +58,7 @@ def evaluate_federated_model(data_splits):
     try:
         federated_model = xgb.Booster()
         federated_model.load_model(model_file)
-        X_test, y_test = data_splits['global_test']
+        X_test, y_test = data_splits['global_test'][0], data_splits['global_test'][1]
         
         dtest = xgb.DMatrix(X_test)
         y_pred_proba = federated_model.predict(dtest)
@@ -114,7 +114,7 @@ def run_comprehensive_evaluation():
             pickle.dump(centralised_result[-1], f)
     
     # Save predictions for global test set (centralised and federated only)
-    X_test, y_test = data_splits['global_test']
+    X_test, y_test = data_splits['global_test'][0], data_splits['global_test'][1]
     predictions_data = {'true_labels': y_test}
     
     if centralised_result[-1] is not None:

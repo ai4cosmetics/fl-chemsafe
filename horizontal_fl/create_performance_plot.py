@@ -60,10 +60,9 @@ def create_model_comparison_plot():
     
     # Save figure
     os.makedirs("plots", exist_ok=True)
-    fig.write_html("plots/model_comparison.html")
     fig.write_image("plots/model_comparison.png", width=950, height=1000, scale=2)
     
-    print("Performance comparison plot saved to plots/model_comparison.html and plots/model_comparison.png")
+    print("Performance comparison plot saved plots/model_comparison.png")
     return fig
 
 if __name__ == "__main__":

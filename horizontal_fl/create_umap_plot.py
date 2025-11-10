@@ -8,9 +8,7 @@ import numpy as np
 import plotly.graph_objects as go
 import umap
 import xgboost as xgb
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from data_preparation import load_data_splits, DataPreparator
+from data_preparation import load_data_splits
 from rdkit import Chem
 from rdkit.Chem import Draw
 import base64
@@ -86,54 +84,27 @@ def load_chemical_metadata():
     with open('data/chemical_metadata.pkl', 'rb') as f:
         return pickle.load(f)
 
-def smiles_to_features_map():
-    """Create mapping from standardised SMILES to feature index using same random state"""
-    processor = DataPreparator()
-    combined, ai4_data, skin_data = processor.load_and_prepare_data()
-    
-    # Use the same splitting logic as in the original create_data_splits
-    def get_client_smiles_splits(data):
-        if len(data) == 0:
-            return [], []
-        unique_mols = data.groupby('std_smiles')['LLNA'].first().reset_index()
-        try:
-            train_smiles, test_smiles = train_test_split(
-                unique_mols['std_smiles'].values, 
-                test_size=0.2, 
-                random_state=42,  # Same as DataPreparator default
-                stratify=unique_mols['LLNA'].values if unique_mols['LLNA'].value_counts().min() >= 2 else None
-            )
-        except:
-            train_smiles, test_smiles = train_test_split(
-                unique_mols['std_smiles'].values, 
-                test_size=0.2, 
-                random_state=42
-            )
-        return train_smiles.tolist(), test_smiles.tolist()
-    
-    # Get splits for each client
-    ai4_train_smiles, ai4_test_smiles = get_client_smiles_splits(ai4_data)
-    skin_train_smiles, skin_test_smiles = get_client_smiles_splits(skin_data)
-    
-    # Build mappings
+def smiles_to_features_map(data_splits):
+    """Create mapping from standardised SMILES to feature index using cached data"""
+    # Build mappings from cached splits (no reprocessing needed!)
     feature_to_smiles = {}
     test_to_smiles = {}
     
     # Training data mapping (combined order: ai4 first, then skin)
     feature_idx = 0
-    for smiles in ai4_train_smiles:
+    for smiles in data_splits['ai4cosmetics']['train'][2]:  # SMILES are at index 2
         feature_to_smiles[feature_idx] = smiles
         feature_idx += 1
-    for smiles in skin_train_smiles:
+    for smiles in data_splits['skindoctorcp']['train'][2]:
         feature_to_smiles[feature_idx] = smiles
         feature_idx += 1
     
     # Test data mapping (combined order: ai4 first, then skin)
     test_feature_idx = 0
-    for smiles in ai4_test_smiles:
+    for smiles in data_splits['ai4cosmetics']['test'][2]:
         test_to_smiles[test_feature_idx] = smiles
         test_feature_idx += 1
-    for smiles in skin_test_smiles:
+    for smiles in data_splits['skindoctorcp']['test'][2]:
         test_to_smiles[test_feature_idx] = smiles
         test_feature_idx += 1
     
@@ -198,7 +169,7 @@ def create_training_traces(train_embedding, y_train, ai4_train_size, train_to_sm
     traces.append(go.Scatter(
         x=ai4_embed[:, 0], y=ai4_embed[:, 1],
         mode='markers',
-        marker=dict(color='#a8d93b', size=8, opacity=0.8, line=dict(width=1, color='white')),
+        marker=dict(color='#ff69b4', size=12, opacity=0.8, line=dict(width=1, color='white')),
         name='AI4Cosmetics Training',
         text=ai4_hover_text,
         hovertemplate='%{text}<extra></extra>'
@@ -222,7 +193,7 @@ def create_training_traces(train_embedding, y_train, ai4_train_size, train_to_sm
     traces.append(go.Scatter(
         x=skin_embed[:, 0], y=skin_embed[:, 1],
         mode='markers',
-        marker=dict(color='#037bff', size=8, opacity=0.8, line=dict(width=1, color='white')),
+        marker=dict(color='#037bff', size=12, opacity=0.8, line=dict(width=1, color='white')),
         name='SkinDoctorCP Training',
         text=skin_hover_text,
         hovertemplate='%{text}<extra></extra>'
@@ -265,7 +236,7 @@ def create_test_trace(test_embedding, y_test, X_test, test_to_smiles, metadata, 
     return go.Scatter(
         x=test_embedding[:, 0], y=test_embedding[:, 1],
         mode='markers',
-        marker=dict(color='black', size=8, opacity=0.9, line=dict(width=1, color='white')),
+        marker=dict(color='black', size=12, opacity=0.9, line=dict(width=1, color='white')),
         name='Global Test Set',
         text=test_hover_text,
         hovertemplate='%{text}<extra></extra>'
@@ -276,7 +247,7 @@ def create_umap_visualisation():
     # Load data and models
     data_splits, centralised_model, federated_model = load_models_and_data()
     metadata = load_chemical_metadata()
-    train_to_smiles, test_to_smiles = smiles_to_features_map()
+    train_to_smiles, test_to_smiles = smiles_to_features_map(data_splits)
     
     # Get training and test data
     X_train = data_splits['combined_train'][0]
@@ -311,26 +282,33 @@ def create_umap_visualisation():
     
     # Update layout
     fig.update_layout(
-        title={
-            'text': 'Chemical Space Visualisation: Training Data and Test Predictions',
-            'y': 0.95,
-            'x': 0.5,
-            'xanchor': 'center',
-            'font': {'size': 28, 'color': 'black'}
-        },
+        #title={
+        #    'text': 'Chemical Space Visualisation: Training Data and Test Predictions',
+        #    'y': 0.95,
+        #    'x': 0.5,
+        #    'xanchor': 'center',
+        #    'font': {'size': 28, 'color': 'black'}
+        #},
         xaxis_title='UMAP Dimension 1',
         yaxis_title='UMAP Dimension 2',
         hovermode='closest',
-        width=1000,
+        width=1400,
         height=1000,
-        legend=dict(font_size=24),
-        font=dict(family='Onest, Arial, sans-serif', size=24, color='black')
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.15,
+            xanchor="center",
+            x=0.5,
+            font_size=24
+        ),
+        font=dict(family='Arial', size=24, color='black')
     )
     
     # Save plot
     os.makedirs('plots', exist_ok=True)
     fig.write_html('plots/chemical_space_umap.html')
-    fig.write_image('plots/chemical_space_umap.png', width=1000, height=1000, scale=2)
+    fig.write_image('plots/chemical_space_umap.png', scale=2)
     print("UMAP visualisation saved to plots/chemical_space_umap.html and plots/chemical_space_umap.png")
 
 if __name__ == "__main__":

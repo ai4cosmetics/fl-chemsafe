@@ -125,11 +125,9 @@ def create_radar_chart(results):
         fig.add_trace(go.Scatterpolar(
             r=values,
             theta=metric_labels + [metric_labels[0]],
-            fill='toself',
+            fill='none',
             name=model_name,
-            line=dict(color=color, width=2),
-            fillcolor=color,
-            opacity=0.3
+            line=dict(color=color, width=8)  #4
         ))
     
     fig.update_layout(
@@ -140,10 +138,10 @@ def create_radar_chart(results):
                 tickvals=[0, 0.5, 1.0],
                 ticktext=['0', '0.5', '1.0'],
                 tickangle=0,
-                tickfont=dict(family='Arial', color='black', size=28)
+                tickfont=dict(family='Arial', color='black', size=40)  #28
             ),
             angularaxis=dict(
-                tickfont=dict(family='Arial', color='black', size=32)
+                tickfont=dict(family='Arial', color='black', size=60)  #32
             )
         ),
         title=dict(
@@ -161,7 +159,7 @@ def create_radar_chart(results):
             font=dict(family='Arial', color='black', size=36),
             traceorder='normal'
         ),
-        font=dict(family='Arial', color='black', size=28),
+        font=dict(family='Arial', color='black', size=40), #28
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)'
     )
